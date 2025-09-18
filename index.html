@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AYUNEX Demo</title>
+  <title>AYUNEX FHIR Demo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>AYUNEX – Prototype</h1>
+  <h1>AYUNEX FHIR Terminology Demo</h1>
 
-  <!-- Login / Signup -->
-  <div id="auth">
-    <input id="email" placeholder="Email">
-    <input id="password" type="password" placeholder="Password">
-    <button onclick="signup()">Sign Up</button>
-    <button onclick="login()">Login</button>
-    <button onclick="logout()">Logout</button>
-  </div>
-  <p id="userStatus">Not logged in</p>
+  <!-- CodeSystem Lookup -->
+  <section>
+    <h2>CodeSystem Lookup</h2>
+    <input id="csInput" placeholder="Enter CodeSystem (NAMASTE, WHO_Ayurveda, ICD11_TM2)">
+    <button onclick="showCodeSystem()">Get CodeSystem</button>
+    <pre id="csResult"></pre>
+  </section>
 
-  <!-- Patient Records -->
-  <h2>Patient Records</h2>
-  <input id="patientName" placeholder="Patient Name">
-  <input id="diagnosis" placeholder="Diagnosis Code">
-  <button onclick="addRecord()">Add Record</button>
-  <ul id="records"></ul>
-
-  <!-- Search Codes -->
-  <h2>Search Codes</h2>
-  <input id="searchBox" placeholder="Search NAMASTE/ICD...">
-  <button onclick="searchCodes()">Search</button>
-  <ul id="results"></ul>
+  <!-- Auto-complete -->
+  <section>
+    <h2>ValueSet Auto-complete</h2>
+    <input id="vsInput" placeholder="Search ValueSet">
+    <button onclick="showValueSet()">Lookup ValueSet</button>
+    <pre id="vsResult"></pre>
+  </section>
 
   <!-- Translate -->
-  <h2>Translate Code</h2>
-  <input id="translateInput" placeholder="Enter code">
-  <button onclick="translateCode()">Translate</button>
-  <p id="translateResult"></p>
+  <section>
+    <h2>Translate NAMASTE ↔ TM2</h2>
+    <input id="translateInput" placeholder="Enter code">
+    <button onclick="showTranslation()">Translate</button>
+    <pre id="translateResult"></pre>
+  </section>
+
+  <!-- Bundle Upload -->
+  <section>
+    <h2>FHIR Bundle Upload</h2>
+    <textarea id="bundleInput" placeholder="Paste FHIR Bundle JSON here" rows="6" cols="50"></textarea>
+    <button onclick="uploadFHIRBundle()">Upload Bundle</button>
+    <pre id="bundleResult"></pre>
+  </section>
 
   <!-- Voice Search -->
-  <h2>Voice Search</h2>
-  <button onclick="startVoice()">🎤 Start</button>
-  <p id="voiceResult"></p>
+  <section>
+    <h2>Voice Search</h2>
+    <button onclick="startVoice()">🎤 Start Voice</button>
+    <p id="voiceResult"></p>
+  </section>
 
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
-  <script src="firebase.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
