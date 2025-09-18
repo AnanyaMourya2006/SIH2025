@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AYUNEX Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>AYUNEX – Prototype</h1>
+
+  <!-- Login / Signup -->
+  <div id="auth">
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <p id="userStatus">Not logged in</p>
+
+  <!-- Patient Records -->
+  <h2>Patient Records</h2>
+  <input id="patientName" placeholder="Patient Name">
+  <input id="diagnosis" placeholder="Diagnosis Code">
+  <button onclick="addRecord()">Add Record</button>
+  <ul id="records"></ul>
+
+  <!-- Search Codes -->
+  <h2>Search Codes</h2>
+  <input id="searchBox" placeholder="Search NAMASTE/ICD...">
+  <button onclick="searchCodes()">Search</button>
+  <ul id="results"></ul>
+
+  <!-- Translate -->
+  <h2>Translate Code</h2>
+  <input id="translateInput" placeholder="Enter code">
+  <button onclick="translateCode()">Translate</button>
+  <p id="translateResult"></p>
+
+  <!-- Voice Search -->
+  <h2>Voice Search</h2>
+  <button onclick="startVoice()">🎤 Start</button>
+  <p id="voiceResult"></p>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
