@@ -1,6 +1,6 @@
-body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9ff; }
-input { margin: 5px; padding: 5px; }
-button { padding: 5px 10px; margin: 5px; }
+body { font-family: Arial; margin: 20px; background: #f9f9ff; }
+input, button, textarea { margin: 5px; padding: 5px; font-size: 14px; }
 h1 { color: #4A148C; }
-ul { list-style: none; padding-left: 0; }
-li { padding: 3px 0; }
+h2 { color: #6A1B9A; margin-top: 20px; }
+pre { background: #eee; padding: 10px; overflow-x: auto; }
+section { margin-bottom: 30px; padding: 10px; border: 1px solid #ccc; border-radius: 8px; background: #fff; }
