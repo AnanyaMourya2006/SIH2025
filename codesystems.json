@@ -1,0 +1,20 @@
+{
+  "NAMASTE": {
+    "N001": {"display":"Ayurvedic Fever", "parent":null},
+    "N002": {"display":"Ayurvedic Cough", "parent":null},
+    "N003": {"display":"Ayurvedic Headache", "parent":null},
+    "N004": {"display":"Ayurvedic Diabetes", "parent":null}
+  },
+  "WHO_Ayurveda": {
+    "A001": {"display":"Fever", "parent":null},
+    "A002": {"display":"Cough", "parent":null},
+    "A003": {"display":"Headache", "parent":null},
+    "A004": {"display":"Diabetes", "parent":null}
+  },
+  "ICD11_TM2": {
+    "T001": {"display":"Fever TM2", "parent":null},
+    "T002": {"display":"Cough TM2", "parent":null},
+    "T003": {"display":"Headache TM2", "parent":null},
+    "T004": {"display":"Diabetes TM2", "parent":null}
+  }
+}
