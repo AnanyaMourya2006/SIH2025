@@ -1,0 +1,6 @@
+{
+  "FeverSet":["N001","A001","T001"],
+  "CoughSet":["N002","A002","T002"],
+  "HeadacheSet":["N003","A003","T003"],
+  "DiabetesSet":["N004","A004","T004"]
+}
